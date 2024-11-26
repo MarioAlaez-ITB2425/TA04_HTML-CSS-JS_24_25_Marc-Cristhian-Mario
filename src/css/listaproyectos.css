@@ -1,0 +1,101 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #007ced;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  h5 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor principal */
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Centra todo el contenido, incluyendo el botón */
+  }
+  
+  /* Lista de proyectos */
+  ul {
+    list-style: none;
+    background: #111; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px; /* Espacio abajo de la lista para el botón */
+  }
+  
+  li {
+    margin-bottom: 15px;
+  }
+  
+  li a {
+    color: white; /* Azul vibrante */
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: block;
+    text-transform: capitalize;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+  
+  li a:hover {
+    background: #007ced;
+    color: #fff;
+    border-color: #007ced;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 124, 237, 0.5);
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+  
+    li a {
+        font-size: 1rem;
+        padding: 10px;
+    }
+  }
+  
+  /* Estilos del botón */
+  button {
+    background-color: #007bff; /* Fondo azul */
+    color: white;              /* Texto blanco */
+    border: none;              /* Sin bordes */
+    padding: 15px 30px;        /* Espaciado interno */
+    font-size: 16px;           /* Tamaño de la fuente */
+    cursor: pointer;          /* Cambia el cursor al pasar por encima */
+    border-radius: 5px;        /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición para cambio de color */
+    display: inline-block;     /* Asegura que el botón se alinee con otros elementos */
+    margin-top: 20px;          /* Espacio arriba del botón */
+  }
+  
+  button:hover {
+    background-color: #00b30f; /* Cambio de color al pasar el ratón */
+  }

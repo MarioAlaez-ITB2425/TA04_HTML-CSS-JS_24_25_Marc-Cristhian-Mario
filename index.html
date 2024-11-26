@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARC CAÑADAS</title>
+    <link rel="shortcut icon" href="./images/main_photo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/styleindex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero-header">
+        
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-m"></i>
+                    <div class="logo-text">Marc Cañadas</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listaproyectos.html">Lista proyectos</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="./images/main_photo.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hola soy <span class="input">Tecnico IT</span></h5>
+                    <h1>Marc Cañadas</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus dolorum
+                        quibusdam maiores magni quod rem in porro, laborum, laudantium ex repellendus explicabo,
+                        autem molestiae!
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1Sr5TT_AfHD11-Popprt1ojkcDuomWaG-/view?usp=sharing"
+                            class="btn active" target="_blank">Download CV</a>
+                        <a href="formulario1.html" class="btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero-text">
+                    <a href="proyecto1.html">
+                        <h1>Presentación Discos</h1>
+                    </a>
+                    <p> En esta presentación, se aborda el fascinante mundo de los discos, un componente clave en la
+                        tecnología de almacenamiento. Primero, se explican los tipos de discos más comunes, como los
+                        discos duros (HDD), discos de estado sólido (SSD) y discos ópticos (CD/DVD). Se profundiza en
+                        sus características, ventajas y desventajas, proporcionando una visión clara de cómo cada tipo
+                        de disco se utiliza en diferentes contextos.
+
+                    </p>
+
+                    <div class="imagen-contenedor">
+                        <a href="https://www.canva.com/design/DAGU2YdaZXc/tZBloZiaZPBHjukwSMve5w/view?utm_content=DAGU2YdaZXc&utm_campaign=designshare&utm_medium=link&utm_source=editor#2"
+                            target="_blank">
+                            <img src="./images/Captura de pantalla de 2024-11-22 11-35-44.png" alt="profile pic"
+                                class="imagen-bonita">
+                        </a>
+                    </div>
+                    <div class="hero-text">
+                        <div class="social">
+                            <i class="fa-solid fa-compact-disc"></i>
+                            <i class="fa-solid fa-file-csv"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <a href="proyecto2.html">
+                        <h1>Lenguaje de Marcas</h1>
+                    </a>
+                    <p> En este proyecto, creé un formulario para recolectar datos, que luego se guardan en formato
+                        CSV. Posteriormente, convertí esos datos a XML y los procesé con Python para extraer y mostrar
+                        la información. Finalmente, almacené los datos procesados en formato JSON para su almacenamiento
+                        y futuras consultas.
+
+                    </p>
+                    <div class="imagen-contenedor">
+                        <a href="https://github.com/SilviaMartin-ITB2425/TA03_Nayra_Mario_Silvia_Marc_Python_LLenguatgeMarcas_24_25.git"
+                            target="_blank">
+                            <img src="./images/Captura de pantalla de 2024-11-22 11-48-26.png" alt="profile pic"
+                                class="imagen-bonita">
+                        </a>
+
+                    </div>
+                    <div class="hero-text">
+                        <div class="social">
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fa-solid fa-file-csv"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="hero-header1">
+        <div class="container">
+            <div class="hero-text">
+                <p>MCM &copy; 2024 MCM. Tots els drets reservats.</p>
+            </div>
+            <div class="hero-text">
+                <div class="social">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://es.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input", {
+            strings: ["Sys Admin", "Programador Web", "Experto en ciberseguridad"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
