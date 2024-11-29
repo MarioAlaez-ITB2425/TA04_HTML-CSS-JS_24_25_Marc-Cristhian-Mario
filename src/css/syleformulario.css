@@ -1,0 +1,145 @@
+/* Estilos generales de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro para mejor contraste */
+    color: #121212; /* Texto claro para un buen contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Estilos de navegación */
+nav .navlinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .navlinks li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav .navlinks li a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav .navlinks li a:hover {
+    color: #4CAF50; /* Verde cuando pasa el ratón */
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: #e0f0f5; /* Azul claro */
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+    transform: scale(1.02); /* Efecto de agrandamiento al pasar el ratón */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los labels */
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    color: #333; /* Color de texto más oscuro para los labels */
+}
+
+/* Estilo de inputs, select y textarea */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de enfoque en inputs, select y textarea */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Verde cuando se enfoca */
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6); /* Sombra verde */
+}
+
+/* Estilo de textarea */
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Estilo del botón de envío */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+button:active {
+    background-color: #388e3c; /* Un verde más oscuro al hacer clic */
+}
+
+/* Estilos para formulario en móviles */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}

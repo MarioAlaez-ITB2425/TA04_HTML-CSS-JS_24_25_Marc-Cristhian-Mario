@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARC CAÑADAS-FORMULARIO</title>
+    <link rel="shortcut icon" href="./images/main_photo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/syleformulario.css">
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <ul class="navlinks">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="listaproyectos.html">Lista proyectos</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <!-- Contenedor del formulario -->
+        <div class="form-container">
+            <h2>Formulario de Contacto</h2>
+
+            <form action="./index.html" method="POST">
+                <!-- Campo de Nombre (Obligatorio) -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <!-- Campo de Apellido (Obligatorio) -->
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <!-- Campo de Gmail -->
+                <label for="gmail">Correo Electrónico (Gmail):</label>
+                <input type="email" id="gmail" name="gmail" required pattern="^[A-Z0-9.-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
+                    title="Debe ser un correo válido de Gmail (ejemplo: usuario@gmail.com)">
+
+                <!-- Campo de Número de Teléfono -->
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <!-- Campo de Comentarios -->
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea>
+
+                <!-- Botón de Enviar -->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

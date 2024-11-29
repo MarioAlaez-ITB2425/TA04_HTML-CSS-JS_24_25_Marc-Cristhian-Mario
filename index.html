@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARC CAÑADAS</title>
+    <link rel="shortcut icon" href="./images/main_photo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/styleindex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-m"></i>
+                    <div class="logo-text">Mario Alaez</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="listaproyectos.html">Lista proyectos</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="./images/main_photo.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hola soy <span class="input">Tecnico IT</span></h5>
+                    <h1>Mario Alaez</h1>
+                    <p> Soy Mario Alaez un administrador de sistemas lleno de pasion y con ganas de aprender
+                    </p>
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1KZxrsPbZkFE-btlieVkdj02xVO4hcTyb/view"
+                            class="btn active" target="_blank">Download CV</a>
+                        <a href="formulario1.html" class="btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero-text">
+                    <a href="proyecto1.html">
+                        <h1>RTX 4090</h1>
+                    </a>
+                    <p> Las graficas son un tema muy popular ultimamente, sobretodo con el desarollo de la IA, y NVIDIA ha sabido aprovechar esta oportunidad, por eso me gustaria mostrarte el mundo de las graficas y el como estan diseñadas, en esta presentacion se puede ver desde la arquitectura que usan, hasta las tecnologias que estas implementan, tambien te daras cuenta de que la ley de More no afecta de igual manera a las graficas
+                    </p>
+                    <div class="imagen-contenedor">
+                        <a href="https://www.canva.com/design/DAGU138EJRk/YWYAHnSkuEcP3qm9WQhMGA/edit?utm_content=DAGU138EJRk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                            target="_blank">
+                            <img src="images/RTX4090.png"
+                                class="imagen-bonita">
+                        </a>
+                    </div>
+                    <div class="hero-text">
+                        <div class="social">
+                            <i class="fa-solid fa-microchip"></i>
+                            <i class="fa-solid fa-display"></i>
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <a href="proyecto2.html">
+                        <h1>BitPulse</h1>
+                    </a>
+                    <p> Este seguramente es mi mayor proyecto, una presentacion de 100 diapositivas en el que simulo que tengo una empresa y tengo que informatizar una clase, en este proyecto se pueden ver desde la estructura del cableado hasta los S.O dual boot entre otras muchas mas cosas como servicios de un Windows Server, como proxy, ISS y mas.
+                    </p>
+                    <br>
+                    <div class="imagen-contenedor">
+                        <a href="https://www.canva.com/design/DAGGT5Cb_dA/IMso9ns-QmpjOPfLCMOJeg/edit?utm_content=DAGGT5Cb_dA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                            target="_blank">
+                            <img src="images/BitPulse.png" alt="profile pic"
+                                class="imagen-bonita">
+                        </a>
+                    </div>
+                    <div class="hero-text">
+                        <div class="social">
+                            <i class="fa-solid fa-microchip"></i>
+                            <i class="fa fa-windows" aria-hidden="true"></i>
+                            <i class="fa fa-linux" aria-hidden="true"></i>
+                            <i class="fa-solid fa-plug"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="hero-header1">
+        <div class="container">
+            <div class="hero-text">
+                <p>MCM &copy; 2024 MCM. Tots els drets reservats.</p>
+            </div>
+            <div class="hero-text">
+                <div class="social">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://es.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input", {
+            strings: ["Sys Admin", "Programador Web", "Experto en ciberseguridad"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        })
+    </script>
+</body>
+</html>
